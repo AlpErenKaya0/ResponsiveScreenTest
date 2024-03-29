@@ -21,7 +21,7 @@ data class WindowSizeClass(
 
 @Composable
 fun rememberWindowSizeClass():WindowSizeClass{
-
+//localConfig = jetpack compose'da kullanılan bir özellik, cihazın boyutlarını vs almamız sağlanıyor
     val config = LocalConfiguration.current
 
     val width by remember(config){

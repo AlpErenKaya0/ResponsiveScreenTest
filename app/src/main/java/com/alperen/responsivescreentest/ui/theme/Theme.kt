@@ -52,7 +52,7 @@ fun ResponsiveScreenTestTheme(
         LightColorScheme
     }
     val orientation = when{
-        windowSizeClass.width.size > windowSizeClass.height.size -> Orientation.Landscape
+        windowSizeClass.width.size > windowSizeClass.height.size -> Orientation.Portrait
         else -> Orientation.Portrait
     }
 

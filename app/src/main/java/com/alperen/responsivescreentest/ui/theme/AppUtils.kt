@@ -12,10 +12,9 @@ fun ProvideAppUtils(
     content: @Composable () ->Unit
 ) {
     val dimSet = remember{dimensions}
-    val orientation = remember{orientation}
+
     CompositionLocalProvider(
         LocalAppDimens provides dimSet,
-        LocalOrientationMode provides orientation,
         content = content
     )
 }
